@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc2369fddf.js" crossorigin="anonymous"></script>
+	</head>
+
+  <body style="background: #D9D9D9">
+    <div id="close" class="alert alert-warning alert-dismissible fade show" role="alert">
+      <button onclick="closeAlert()" type="button" class="close">
+        <span  aria-hidden="true">&times;</span>
+      </button>
+      <strong>Dica: Se quiser pode usar os números do seu teclado !</strong> 
+    </div>
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+
+          <div class="calculadora">
+            <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled">
+            
+            <div class="row">
+              <button onclick="calcular('acao', 'c')" type="button" class="button clear">C</button>
+              <button onclick="calcular('acao', '/')" type="button" class="button div">/</button>
+              <button onclick="calcular('acao', '*')" type="button" class="button x">x</button>
+            </div>
+
+            <div class="row">
+              <button onclick="calcular('valor', 7)" type="button" class="button">7</button>
+              <button onclick="calcular('valor', 8)" type="button" class="button">8</button>
+              <button onclick="calcular('valor', 9)" type="button" class="button">9</button>
+              <button onclick="calcular('acao', '-')" type="button" class="button minus">-</button>
+            </div>
+            
+            <div class="row">
+              <button onclick="calcular('valor', 4)" type="button" class="button">4</button>
+              <button onclick="calcular('valor', 5)" type="button" class="button">5</button>
+              <button onclick="calcular('valor', 6)" type="button" class="button">6</button>
+              <button onclick="calcular('acao', '+')" type="button" class="button plus">+</button>
+            </div>
+
+            <div class="row">
+              <button onclick="calcular('valor', '1')" class="button">1</button>
+              <button onclick="calcular('valor', '2')" class="button">2</button>
+              <button onclick="calcular('valor', '3')" class="button">3</button>
+              <button onclick="calcular('acao', '=')" type="button" class="button enter">=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button onclick="calcular('valor', 0)" type="button" class="button zero">0</button>
+              <button onclick="calcular('acao', '.')" type="button" class="button">.</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>    
+
+
+    <footer>
+      <h6><strong>Feito com <i class="fa fa-heart red" aria-hidden="true"></i> e muito <i class="fa fa-coffee brown" aria-hidden="true"></i> por <u>Alex Gabriel</u></strong></h6>
+    </footer>
+    <script src="calc.js"></script>
+
+  </body>	
+
+</html>
